@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/67f8db9918.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=BhuTuka+Expanded+One&family=Dancing+Script&family=Hubballi&family=Inspiration&family=Pacifico&family=Sacramento&family=Sanchez&family=Sansita+Swashed:wght@300&family=Satisfy&family=Shizuru&family=Sriracha&display=swap');
+    .nav1{
+        height: 40px;
+        width: 100%;
+        margin-left: 60px;
+    }
+    .nav2{
+        background-color: rgb(106, 106, 129);
+    }
+    .crsl{
+        height: 500px;
+    }
+    .li1{
+        color: whitesmoke;
+    }
+    .li1:hover{
+        color: #48e9f5;
+    }
+    .bd1{
+        background-color: rgb(255, 255, 255);;
+    }
+    .p1{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        color: rgb(56, 56, 77);
+        font-family: 'Dancing Script', cursive;
+    }
+    .p1:hover{
+        background-color: rgb(180, 180, 199);
+        color: white;
+    }
+    .h11{
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        color: rgb(56, 56, 77);
+        padding-top: 60px;
+    }
+    .h12{
+        text-align: center;
+        color: rgb(56, 56, 77);
+        padding-top: 50px;
+        font-family: 'Pacifico', cursive;
+    }
+    .cc1{
+        /* background-color: blue; */
+        padding-top: 30px;
+        width: 500px;
+        padding-left: 40px;
+        margin-top: 30px;
+    }
+    /* .cc2{
+        background-color: blueviolet;
+        padding-top: 30px;
+        width: 500px;
+        margin-left: 40px;
+        margin-top: 30px;
+    } */
+    .img1{
+        width: 100%;
+        box-shadow: 0px 0px 3px gray;
+    }
+    .img1:hover{
+        box-shadow: 0px 0px 20px gray;
+    }
+    .bt1{
+        color: rgb(240, 240, 240);
+        height: 30px;
+        width: 50px;
+        background-color: darkblue;
+        border-radius: 20px;
+        margin-top: 80px;
+        border: 1px solid darkblue;
+        margin-left: 20px;
+        position: fixed;
+    }
+    .bt1:hover{
+        color: rgb(8, 8, 32);
+        background-color: white;
+    }
+    .bt2{
+        color: white;
+        background-color:  rgb(56, 56, 77);
+        height: 50px;
+        width: 180px;
+        border-radius: 20px;
+        border: 1px solid  rgb(56, 56, 77);
+        padding-top: -10px;
+    }
+    .bt2:hover{
+        color:  rgb(56, 56, 77);
+        background-color: white;
+    }
+    .img2{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .img3{
+        padding-top: 50px;
+        height: 250px;
+        width: 100%;
+    }
+    .cl1{
+        /* background-color: blue; */
+        margin-left: 104px;
+    }
+    .cl2{
+        /* background-color: blueviolet; */
+        margin-left: 29px;
+    }
+    .cl3{
+        /* background-color: cadetblue; */
+        margin-left: 27px;
+    }
+    .c{
+        width: 250px;
+    }
+    input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    }
+    textarea{
+        background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    }
+    .btn{
+        color: white;
+        border: 1px solid rgb(56, 56, 77);
+        background-color: rgb(56, 56, 77);
+        margin-right: 350px;
+    }
+    .btn:hover{
+        color: rgb(56, 56, 77);
+        background-color: white;
+    }
+    .ic1{
+        margin-left: 20px;
+        margin-top: 40px;
+        color: green;
+        /* height: 100px; */
+        position: fixed;
+        /* width: 60px; */
+        /* border: 1px solid green; */
+        /* align-items: center; */
+    }
+    .ic1:hover{
+        color: black;
+    }
+    .ic2{
+        margin-left: 20px;
+        color: green;
+        position: fixed;
+        margin-top: 10px
+        /* height: 30px; */
+        /* border: 1px green solid; */
+        /* width: 40px; */
+        /* border-radius: 10px;*/
+    }
+    .ic2:hover{
+        color: black;
+    }
+    .lst1{
+        color: rgb(56, 56, 77);
+        font-family: 'Dancing Script', cursive;
+    }
+    .ul1{
+        border: 1px dotted rgb(56, 56, 77);
+        background-color:  rgb(217, 217, 219);
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .ul1:hover{
+        /* color: rgb(56, 56, 77); */
+        background-color: white;
+    }
+    .img4{
+        width: 100%;
+        box-shadow: 0px 0px 5px gray;
+        height: 200px;
+    }
+    .img4:hover{
+        box-shadow: 0px 0px 20px rgb(250, 225, 2);
+    }
+    .r1{
+        background-color: rgb(225, 225, 245);
+        margin-left: 10px;
+    }
+    .bt3{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+    .bt3:hover{
+        color: black;
+        background-color: white;
+    }
+    .ca1{
+        margin-top: 30px;
+    }
+    .r2{
+        width: 75%;
+    }
+    .ds1{
+        background-image: url(./main_prjct_images/motion6.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+    .qr1{
+        background-color: rgb(217, 217, 219);
+        border: solid 2px rgb(51, 51, 66);
+    }
+    .h13{
+        color: rgb(51, 51, 66);
+        /* text-align: center; */
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+    .bt5{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .bt5:hover{
+        color: black;
+        background-color: white;
+    }
+    .bt6{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    .bt6:hover{
+        color: black;
+        background-color: white;
+    }
+    .qry2{
+        /* height: 300px;
+        width: 600px; */
+    }
+    .qr1:hover{
+        background-color: rgb(217, 217, 219);  
+    }
+    .ft{
+        background-color: rgb(57, 57, 70);
+        margin-top: 40px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .ft1{
+        margin-top: 30px;
+        height: 40px;
+        width: 50%;
+        margin-left: 10px;
+    }
+    .ft2{
+        color: white;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 30px;
+        font-family: 'Pacifico', cursive;
+    }
+    .ft3{
+        color: white;
+        margin-top: 30px;
+
+    }
+    .ft4{
+        margin-top: 70px;
+        margin-bottom: 50px;
+        color: rgb(14, 14, 167);
+        margin-left: 5px;
+    }
+    .ft5{
+        color: purple;
+        margin-left: 5px;
+    }
+    .ft6{
+        color: rgb(68, 184, 230);
+        margin-left: 5px;
+    }
+    .ft7{
+        color: red;
+        margin-left: 5px;
+    }
+    /* .img5{
+        width: 100%;
+        box-shadow: 0px 0px 5px gray;
+        height: 200px;
+    }
+    .img5:hover{
+        box-shadow: 0px 0px 20px red; */
+</style>
+</head>
+<body>
+    <nav id="navbar-example2" class="navbar px-3 nav2 fixed-top">
+        <a class="navbar-brand" href="#" ><img class="nav1 pe-5"  src="./main_prjct_images/navbar5.jpeg" alt=""></a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link li1" href="#scrollspyHeading1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link li1" href="#scrollspyHeading2">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle li1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">know more</a>
+            <ul class="dropdown-menu li1">
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Our process</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Gallery</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading6">Why choose us</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+    
+    
+    
+    
+    
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1500">
+        <img src="./main_prjct_images/carousal1.jpg" class="d-block w-100 crsl" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 mt-1 pt-5">
+                    <h5 class="fs-1 pt-5 mt-1">DREAM HOME INTERIORS</h5>
+                    <p class="fs-3">Let your dream come TRUE..!!</p>
+                    <p>We will design your home according to your taste in the way you want</p><br><br>
+                    <button class="bt2">READ MORE>>></button>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+        <img src="./main_prjct_images/carousal2.jpg" class="d-block w-100 crsl" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="fs-4">Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space. We are able to doing residential,commercial and other interior works. But mainly we are concentrating on home interior works.</p><br><br>
+                    <button class="bt2">READ MORE>>></button>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+        <img src="./main_prjct_images/carousal3.png" class="d-block w-100 crsl" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="fs-4">Interior design includes conceptual development,space planning, site inspections, Programming, research,etc... so we have an excellent team for fulfill your derams.  </p><br><br><br>
+                    <button class="bt2">READ MORE>>></button>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
+    <div class="row">
+    <!-- Button trigger modal -->
+    <button type="button" class="bt1 col-lg-12 col-md-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="fa-regular fa-message"></i>
+    </button>
+    </div>
+    
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Get Initial Consultation for free</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="nm"></label><br>
+                    <input type="text" id="nm" placeholder="Name(required)" maxlength="48" size="48"><br>
+                    <label for="em"></label><br>
+                    <input type="text" id="em" placeholder="Email(required)" maxlength="48" size="48"><br>
+                    <label for="phn"></label><br>
+                    <input type="text" id="phn" placeholder="Phone Number(required)" maxlength="48" size="48"><br>
+                    <label for="ads"></label><br>
+                    <textarea name="" id="ads" placeholder="Address" cols="50" rows="5"></textarea>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">SUBMIT</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-3">
+                <a href=""><i class="fa-solid fa-phone ic1"></i></a>
+            </div>
+            <div class="col-9">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <i class="fa-brands fa-whatsapp-square ic2"></i>
+            </div>
+            <div class="col-9">
+
+            </div>
+        </div>
+    
+    
+    
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example bd1 container" tabindex="0">
+        <div class="row pt-5 container">
+            <h1 class="h11 fs-1" id="scrollspyHeading1">Unique design for your unique home!!!</h1>
+            <p class="p1 fs-3">Interior design is all about how we experience spaces. It's a powerfull, essentialpart of our daily lives and affects how we live, work, play, and even heal. </p>
+            <p class="p1 fs-3">Designers craft spaces that anticipate your needs and appeal to your emotions while pulling from a broad set of skills and technical knowledge. We will create functional, safe, and and aesthetically pleasing spaces by assessing space requirements, determining optimal furniture placement, and selecting decorative items. </p>
+            <div class="col-2"></div>
+            <!-- <div class="col-lg-12 col-md-12 cc1">
+                <img class="img1" src="./main_prjct_images/i12.jpg" alt="">
+            </div>
+            <div class="col-2"></div> -->
+        </div>
+        <div class="row container">
+            <h1 class="fs-1 h12" id="scrollspyHeading2">About us...</h1>
+            <div class="col-lg-8 col-sm-12">
+                <p class="p1 fs-3">We <strong>DREAM HOME INTERIORS</strong> offers best and suitable interior works to your home. We are residential interior designers that actually care about the customer satisfaction, as well as delivering an outstanding work. You can rest assured that your design will be fully taken care of by a dedicated team of experts, who will always keep you in the loop.</p>
+            </div>
+            <div class="col-lg-4 col-md-3 ">
+                <img class="img2" src="./main_prjct_images/motion2.gif" alt="">
+            </div>
+        </div>
+        <div class="row container">
+            <div class="col-4 c cl1">
+                <img class="img3" src="./main_prjct_images/garantee1.png" alt="">
+            </div>
+            <div class="col-4 c cl2">
+                <img class="img3" src="./main_prjct_images/garantee4.jpg" alt="">
+            </div>
+            <div class="col-4 c cl3">
+                <img class="img3" src="./main_prjct_images/garantee2.jpg" alt="">
+            </div>
+        </div>
+        <div class="row container">
+            <div class="col-2"></div>
+            <div class="col-lg-8 col-sm-6 ul1 mt-5">
+                <h1 class="fs-1 h12 mt-2" id="scrollspyHeading4">Our process</h1>
+                <ul>
+                    <li class="lst1 fs-3 mt-4">Disscuss your ideas with our experts.</li>
+                    <li class="lst1 fs-3 mt-4">Disscuss about your budget. If your budget is low compared to the work, then we will provide other licenced sources of financial options</li>
+                    <li class="lst1 fs-3 mt-4">we'll take care of all your permits! Our team is experienced with permits and will gladly take this tedious task off your plate.</li>
+                    <li class="lst1 fs-3 mt-4">We stand behind our promised timeline</li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+        <div>
+            <h1 class="fs-1 h12" id="scrollspyHeading5">Gallery</h1>
+            <div class="row container r1 me-5">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i1.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i2.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i3.jpg.crdownload" alt="">
+                </div>
+            </div>
+            <div class="row container r1 me-5">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i4.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i5.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    
+                </div>
+            </div>
+            <div class="row container r1 me-5">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i9.webp" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i7.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i8.jpg" alt="">
+                </div>
+            </div>
+            <div class="row container r1 me-5">
+                <div class="col-2"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i10.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img class="img4 mt-5" src="./main_prjct_images/i11.jpg" alt="">
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row container r1 me-5">
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <button class="bt3">VIEW MORE>>></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row container me-5 ds1">
+            <h1 class="fs-1 h12" id="scrollspyHeading6">Why choose US?</h1>
+            <div class="col-lg-12 col-md-6 col-sm-4">
+                <p class="p1 fs-3">We believe that a person's personally and mood is depend on the place he resides. We will provide you with a space that is not only physically appealing, but also a functional living space that will uplift the emotions of the residents. We will design a concept as per your requirements and as well as do all the necessory services like preparing construction documnets as well as on-site visits until the execution end.</p>
+            </div>
+        </div> 
+        
+        
+
+        <div class="row container me-5 mt-5 qry2">
+            <h1 class="h13 fs-1 " id="scrollspyHeading7">Query Form</h1><br><br><br>
+            <div class="col-lg-4 col-md-12 col-sm-12 qr1">
+                <label for="nm"></label><br>
+                <input type="text" id="nm" placeholder="Name:" maxlength="35" size="35"><br>
+                <label for="em"></label><br>
+                <input type="text" id="em" placeholder="Email:" maxlength="35" size="35"><br>
+                <label for="phn"></label><br>
+                <input type="text" id="phn" placeholder="Phone Number:" maxlength="35" size="35"><br>
+                <label for="qryy"></label><br>
+                <textarea name="" id="qryy" placeholder="Write your query here!!!" cols="36" rows="5"></textarea><br>
+                <button class="bt5">SEND QUERY</button>
+                <button class="bt6">CANCEL</button>
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4"></div>
+        </div>    
+
+
+    </div>
+
+
+    <div class="row ft">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <h1 class="ft2">BE IN TOUCH</h1>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img class="ft1" src="./main_prjct_images/navbar5.jpeg" alt="">
+            <p class="ft3"><i class="fa-solid fa-phone"></i> +91 890 789 5654 <br> <i class="fa-solid fa-envelope"></i> dreamhomeinteriors@gmail.com <br> <i class="fa-solid fa-globe"></i> www.dreamhomeinteriors.com</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <i class="fa-brands fa-facebook ft4 fa-2x"></i>
+            <i class="fa-brands fa-instagram-square fa-2x ft5"></i>
+            <i class="fa-brands fa-twitter-square fa-2x ft6"></i>
+            <i class="fa-brands fa-google-plus fa-2x ft7"></i>
+            <i class="fa-brands fa-linkedin fa-2x ft4"></i>
+        </div>
+    </div>    
+    
+
+</body>
+</html>
